@@ -23,6 +23,9 @@ generate_messages(
 
 catkin_package(CATKIN_DEPENDS message_runtime std_msgs)
 
+install(FILES requirements.txt
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
 # Testing
 if(CATKIN_ENABLE_TESTING)
   catkin_add_nosetests(test/test_json_message_converter.py)

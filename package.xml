@@ -24,4 +24,8 @@
 
   <test_depend>rosunit</test_depend>
   <test_depend>std_srvs</test_depend>
+
+  <export>
+    <pip_requirements>requirements.txt</pip_requirements>
+  </export>
 </package>
